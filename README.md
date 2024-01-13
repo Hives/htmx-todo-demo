@@ -2,7 +2,7 @@
 
 <img src="screengrab.png">
 
-TODO app implemented with HTMX and Http4k
+TODO app implemented with HTMX, Http4k and JTE templates
 
 ```shell
 ./gradlew clean build

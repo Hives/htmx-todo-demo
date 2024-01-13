@@ -17,6 +17,7 @@ dependencies {
     implementation("org.http4k:http4k-core")
     implementation("org.http4k:http4k-server-undertow")
     implementation("org.http4k:http4k-format-jackson")
+    implementation("org.http4k:http4k-template-jte")
     implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.10.1")
 
     testImplementation(kotlin("test"))

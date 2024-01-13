@@ -1,0 +1,13 @@
+@import app.todo.ToDo
+
+@param todo: ToDo
+
+<div id="todo-${todo.id}" class="${if (todo.isComplete) "complete" else ""}">
+    <label>${todo.text}</label>
+    <button hx-post="/todo/${todo.id}/toggle" hx-target="#todo-${todo.id}">
+        ${if (todo.isComplete) "Uncomplete" else "Complete"}
+    </button>
+    <button hx-delete="/todo/${todo.id}" hx-target="#todos">
+        Delete
+    </button>
+</div>

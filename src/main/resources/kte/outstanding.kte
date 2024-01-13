@@ -1,0 +1,6 @@
+@param outstanding: Int
+@param swapOob: Boolean = false
+
+<div id="outstanding" hx-swap-oob="${swapOob}">
+    ${outstanding} item${if (outstanding == 1) "" else "s"} left
+</div>

@@ -1,0 +1,25 @@
+@import app.todo.ToDo
+
+@param todos: List<ToDo>
+
+<head>
+    <title>HTMX To Do demo</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <style>
+        .complete label {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+<h1>HTMX To Do demo</h1>
+<h2>To Dos</h2>
+<form hx-post="/todo" hx-target="#todos">
+    <input type="text" name="text" placeholder="What needs to be done?">
+    <button type="submit">Submit</button>
+</form>
+<div id="todos">
+    @template.todo-list(todos = todos)
+</div>
+@template.outstanding(outstanding = todos.count { !it.isComplete })
+</body>

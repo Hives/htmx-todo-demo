@@ -1,0 +1,11 @@
+@import app.todo.ToDo
+
+@param todos: List<ToDo>
+
+<ul>
+    @for(todo in todos)
+        <li>
+            @template.todo(todo = todo)
+        </li>
+    @endfor
+</ul>

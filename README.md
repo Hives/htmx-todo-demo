@@ -1,5 +1,7 @@
 # HTMX + Http4k app app demo
 
+<img src="screengrab.png">
+
 TODO app implemented with HTMX and Http4k
 
 ```shell
@@ -7,6 +9,3 @@ TODO app implemented with HTMX and Http4k
 ./gradlew run
 ```
 👆 should install and run it.
-
-Also uses [kotlinx.html](https://github.com/Kotlin/kotlinx.html) DSL for 
-HTML - found this awkward to work with.
